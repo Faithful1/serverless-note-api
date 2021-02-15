@@ -38,13 +38,6 @@ iamRoleStatements:
     Resource: "arn:aws:dynamodb:ap-southeast-2:*:*"
 
 functions:
-  hello:
-    handler: handler.hello
-    events:
-      - http:
-          path: hello
-          method: get
-
   # Defines an HTTP API endpoint that calls the main function in create.js
   create:
     handler: create.main
